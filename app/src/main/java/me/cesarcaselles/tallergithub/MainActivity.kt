@@ -49,4 +49,32 @@ fun Targeta(modifier: Modifier = Modifier) {
                 .size(120.dp)
                 .clip(CircleShape)
         )
-        }
+
+        Text(
+            modifier = Modifier.padding(top = 25.dp, bottom = 5.dp),
+            text = "Juan Perez",
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold
+        )
+
+        Text(
+            modifier = Modifier.padding(bottom = 25.dp),
+            text = "Desarrollador Móvil Jr.",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
+
+        HorizontalDivider(
+            modifier = Modifier.padding(vertical = 8.dp),
+            thickness = 1.dp,
+            color = Color.Gray
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewTargeta() {
+    Targeta()
+}
